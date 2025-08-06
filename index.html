@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Top-rated San Francisco landscaping company with over 10 years of experience. We create beautiful, sustainable outdoor spaces for homes and businesses."
+    />
+    <title>SF Green Landscaping | Bay Area Landscaping | San Francisco</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" />
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+          <img
+            src="./assets/images/sfgreen.webp"
+            alt="San Francisco Landscaping logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+            class="cs-logo-img no-dark-filter"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="index.html" class="cs-li-link cs-active"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="about.html" class="cs-li-link"> About </a>
+              </li>
+              <li class="cs-li">
+                <a href="services.html" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="gallery.html" class="cs-li-link"> Gallery </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="contact.html" class="cs-button-outline">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg
+            class="cs-moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 480 480"
+            style="enable-background: new 0 0 480 480"
+            xml:space="preserve"
+          >
+            <path
+              d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+            />
+          </svg>
+          <img
+            class="cs-sun"
+            aria-hidden="true"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg"
+            decoding="async"
+            alt="moon"
+            width="15"
+            height="15"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero-1467">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h1 class="cs-title">San Francisco Landscaping</h1>
+          <p class="cs-text">
+            Transform your outdoor space with expert landscaping solutions
+            tailored to San Francisco's unique climate and style. We specialize
+            in sustainable design, lawn care, and custom outdoor installations.
+          </p>
+          <a href="contact.html" class="cs-button-solid">Call Us Now</a>
+          <div class="cs-reviews" aria-hidden="true">
+            <div class="cs-reviews-flex">
+              <img
+                class="cs-reviews-img"
+                decoding="async"
+                fetchpriority="high"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png"
+                alt="icon"
+                width="48"
+                height="48"
+              />
+              <img
+                class="cs-reviews-img"
+                decoding="async"
+                fetchpriority="high"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png"
+                alt="icon"
+                width="48"
+                height="48"
+              />
+              <img
+                class="cs-reviews-img"
+                decoding="async"
+                fetchpriority="high"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png"
+                alt="icon"
+                width="48"
+                height="48"
+              />
+              <img
+                class="cs-reviews-img"
+                decoding="async"
+                fetchpriority="high"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png"
+                alt="icon"
+                width="48"
+                height="48"
+              />
+              <img
+                class="cs-reviews-img"
+                decoding="async"
+                fetchpriority="high"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile5.png"
+                alt="icon"
+                width="48"
+                height="48"
+              />
+              <span class="cs-reviews-number">30+</span>
+            </div>
+          </div>
+          <div class="cs-stars">
+            <img
+              class="cs-icon"
+              decoding="async"
+              fetchpriority="high"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+              alt="icon"
+              width="16"
+              height="16"
+            />
+            <img
+              class="cs-icon"
+              decoding="async"
+              fetchpriority="high"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+              alt="icon"
+              width="16"
+              height="16"
+            />
+            <img
+              class="cs-icon"
+              decoding="async"
+              fetchpriority="high"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+              alt="icon"
+              width="16"
+              height="16"
+            />
+            <img
+              class="cs-icon"
+              decoding="async"
+              fetchpriority="high"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+              alt="icon"
+              width="16"
+              height="16"
+            />
+            <img
+              class="cs-icon"
+              decoding="async"
+              fetchpriority="high"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star-single.svg"
+              alt="icon"
+              width="16"
+              height="16"
+            />
+          </div>
+          <p class="cs-desc">
+            San Francisco also works in the Bay Area for residential
+            landscaping.
+          </p>
+        </div>
+        <div class="cs-right">
+          <span class="cs-tag">
+            Online Special
+            <span class="cs-dot" aria-hidden="true"></span>
+          </span>
+          <div class="cs-flex">
+            <h3 class="cs-h3">
+              Get a <span style="color: #18e735">FREE</span> Estimate
+            </h3>
+            <p class="cs-form-text">
+              Request a free* No-Obligation quote & expert advice from our
+              expert team!
+            </p>
+          </div>
+          <!--Form-->
+          <form
+            class="cs-form"
+            id="cs-form-1467"
+            name="Contact Form"
+            method="post"
+          >
+            <label class="cs-label">
+              Name
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="name-1467"
+                name="name"
+              />
+            </label>
+            <label class="cs-label">
+              Phone
+              <input
+                class="cs-input"
+                required
+                type="tel"
+                id="phone-1467"
+                name="phone"
+              />
+            </label>
+            <label class="cs-label">
+              Email
+              <input
+                class="cs-input"
+                required
+                type="email"
+                id="email-1467"
+                name="email"
+              />
+            </label>
+            <label class="cs-label">
+              How did you hear about us?
+              <input
+                class="cs-input"
+                required
+                type="text"
+                id="hear-1467"
+                name="heat"
+              />
+            </label>
+            <label class="cs-label cs-message">
+              Message
+              <textarea
+                class="cs-input cs-textarea"
+                required
+                name="Message"
+                id="message-1467"
+              ></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">
+              Get Estimate
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="./assets/images/sfherocloud.webp"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="./assets/images/sfherocloud.webp"
+        />
+        <img
+          loading="lazy"
+          decoding="async"
+          src="./assets/images/sfherocloud.webp"
+          alt="field"
+          width="1920"
+          height="1200"
+          aria-hidden="true"
+        />
+      </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-2332">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Services</span>
+          <h2 class="cs-title">We offer awesome services!</h2>
+          <p class="cs-text">
+            At Buildstitch Construction, we bring your dreams to life with
+            unparalleled craftsmanship and a commitment to excellence.
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Landscape Design</h3>
+              </div>
+              <p class="cs-item-text">
+                Custom San Francisco landscape designs tailored to your
+                property's layout, style, and local climate.
+              </p>
+            </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Hardscape Installation</h3>
+              </div>
+              <p class="cs-item-text">
+                Expert hardscaping in San Francisco—from patios to retaining
+                walls—that enhances your outdoor living.
+              </p>
+            </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Irrigation Systems</h3>
+              </div>
+              <p class="cs-item-text">
+                Water-efficient irrigation solutions for San Francisco
+                properties to keep your landscape thriving year-round.
+              </p>
+            </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s1.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Sod Installation</h3>
+              </div>
+              <p class="cs-item-text">
+                Fast, professional sod installation in San Francisco for instant
+                green lawns that look naturally grown.
+              </p>
+            </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s2.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Garden Maintenance</h3>
+              </div>
+              <p class="cs-item-text">
+                Ongoing landscaping care services in San Francisco to keep your
+                garden beautiful and healthy.
+              </p>
+            </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="index.html">
+              <div class="cs-flex">
+                <img
+                  class="cs-icon"
+                  loading="lazy"
+                  decoding="async"
+                  src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/buildstitch-s3.svg"
+                  alt="car"
+                  width="48"
+                  height="48"
+                />
+                <h3 class="cs-h3">Tree Services</h3>
+              </div>
+              <p class="cs-item-text">
+                Professional tree trimming, removal, and health checks—trusted
+                by homeowners across San Francisco.
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-418">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Features</span>
+          <h2 class="cs-title">Professional Landscaping Services</h2>
+          <p class="cs-text">
+            Expert San Francisco landscaping services tailored for the Bay Area.
+            We specialize in sustainable design, garden installation,
+            irrigation, hardscaping, and lawn maintenance to transform outdoor
+            spaces into vibrant, functional, and eco-friendly environments
+            homeowners love.
+          </p>
+          <div class="cs-button-group">
+            <a href="index.html" class="cs-button-solid">Learn More</a>
+            <a href="index.html" class="cs-button-transparent">Get In Touch</a>
+          </div>
+        </div>
+        <div class="cs-image-group">
+          <picture class="cs-picture">
+            <source
+              media="(max-width: 600px)"
+              srcset="./assets/images/kevin-kruger-e3Ujhjjr1Fs-unsplash.jpg"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="./assets/images/kevin-kruger-e3Ujhjjr1Fs-unsplash.jpg"
+            />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="./assets/images/kevin-kruger-e3Ujhjjr1Fs-unsplash.jpg"
+              alt="yard"
+              width="558"
+              height="496"
+            />
+          </picture>
+          <!--Info Box-->
+          <div class="cs-info">
+            <img
+              class="cs-icon"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/tree.svg"
+              alt="icon"
+              width="48"
+              height="48"
+            />
+            <div class="cs-flex">
+              <span class="cs-header">Full Remodel</span>
+              <span class="cs-desc">Sod, plants, driveway, hedges</span>
+            </div>
+          </div>
+          <!--Svg Green Trapezpid-->
+          <img
+            class="cs-trapezoid"
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/trapezoid.svg"
+            alt="yard"
+            width="558"
+            height="496"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Side By Side Reverse              -->
+    <!-- ============================================ -->
+
+    <section id="sbsr-413">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Who We Are</span>
+          <h2 class="cs-title">About Our Company</h2>
+          <p class="cs-text">
+            With over 10 years of experience, our San Francisco landscaping
+            company delivers expert design, maintenance, and eco-friendly
+            solutions. We transform outdoor spaces into stunning, sustainable
+            landscapes that thrive in the Bay Area’s unique climate.
+          </p>
+          <a href="index.html" class="cs-button-solid">More About Us</a>
+        </div>
+        <div class="cs-image-group">
+          <!--Top Left Image-->
+          <picture class="cs-picture cs-picture1">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg
+              "
+            />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg"
+              alt="backyard"
+              width="229"
+              height="352"
+            />
+          </picture>
+          <!--Top Right Image-->
+          <picture class="cs-picture cs-picture2">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg
+              "
+            />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
+              alt="backyard"
+              width="390"
+              height="352"
+            />
+          </picture>
+          <!--Bottom Image-->
+          <picture class="cs-picture cs-picture3">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg
+              "
+            />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg"
+              alt="backyard"
+              width="649"
+              height="227"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-1693">
+      <div class="cs-container">
+        <div class="cs-content">
+          <h2 class="cs-title">
+            Have Doubts? Get Your Queries Solved by Our Experts
+          </h2>
+          <a href="index.html" class="cs-button-solid">Get In Touch</a>
+        </div>
+      </div>
+      <div class="cs-wrapper">
+        <img
+          class="cs-graphic cs-graphic-1"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png"
+          alt="logo"
+          height="372"
+          width="372"
+          loading="lazy"
+          decoding="async"
+        />
+        <img
+          class="cs-graphic cs-graphic-2"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/enterprise-logo.png"
+          alt="logo"
+          height="372"
+          width="372"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    </section>
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-44">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Service</span>
+          <h2 class="cs-title">Landscaping Services in Sometown, USA</h2>
+          <p class="cs-text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Amet minim
+            mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit.
+          </p>
+        </div>
+        <ul class="cs-image-group">
+          <!-- Image 1 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg
+                "
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg"
+                alt="fancy house"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+          <!-- Image 2 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg
+                "
+              />
+              <img
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house2.jpg"
+                alt="modern house"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+          <!-- Image 3 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house3-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house1.jpg"
+                alt="modern home at night"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+          <!-- Image 4 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house4.jpg"
+                alt="modern home"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+          <!-- Image 5 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house5.jpg"
+                alt="appliance"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+          <!-- Image 6 -->
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source
+                media="(max-width: 600px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6-m.jpg
+                "
+              />
+              <source
+                media="(min-width: 601px)"
+                srcset="
+                  https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg
+                "
+              />
+              <img
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/house6.jpg"
+                alt="modern home"
+                width="346"
+                height="346"
+              />
+            </picture>
+          </li>
+        </ul>
+        <a href="index.html" class="cs-button-solid">View Full Gallery</a>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-1172">
+      <div class="cs-container">
+        <div class="cs-content">
+          <span class="cs-topper">Our Work Process</span>
+          <h2 class="cs-title">How To Get Started</h2>
+          <p class="cs-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+            libero sint hic accusantium exercitationem, voluptatem officia
+            quaerat velit quis ullam?
+          </p>
+        </div>
+        <ul class="cs-card-group">
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/lightbulb-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Identify Issues</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/puzzle-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Prepare Solution</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/gears-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Working On This</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <img
+                class="cs-icon"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/box-red.svg"
+                alt="icon"
+                width="40"
+                height="40"
+                loading="lazy"
+                decoding="async"
+                aria-hidden="true"
+              />
+            </picture>
+            <h3 class="cs-h3">Deliver On Hand</h3>
+            <p class="cs-item-text">
+              Extensible for web iterate process before meta services impact
+              with employee engagement strategies.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Tire Screech-->
+      <img
+        class="cs-graphic"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/tire-mark.svg"
+        alt="icon"
+        width="840"
+        height="357"
+        loading="lazy"
+        decoding="async"
+        aria-hidden="true"
+      />
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-274">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="index.html">
+            <!-- Remove the light class if you don't need the dark logo -->
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="./assets/images/sfgreen.webp"
+              alt="logo"
+              width="240"
+              height="32"
+            />
+          </a>
+          <div class="cs-social">
+            <a
+              class="cs-social-link"
+              aria-label="visit google profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+                alt="google"
+                width="11"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit facebook profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+                alt="facebook"
+                width="6"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit instagram profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg"
+                alt="instagram"
+                width="11"
+                height="11"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="tel:123-456 7890">(123) 456 7890</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="mailto:info@codestitch.com"
+              >sflandaescpingi@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Address</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="index.html"
+              >123 Market St<br />
+              San Francisco, CA 94101</a
+            >
+          </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Opening Hours</span>
+          </li>
+          <li class="cs-nav-li">Monday - Friday: 9am-6pm</li>
+          <li class="cs-nav-li">Closed 12pm - 1pm</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

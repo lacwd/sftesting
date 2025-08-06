@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about our San Francisco landscaping company with 10+ years of experience creating stunning, eco-friendly outdoor environments for homes and businesses."
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+      <div class="cs-container">
+        <!--Nav Logo-->
+        <!--Logo is turned white in the css with a filter on dark mode-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+          <img
+            src="./assets/images/sfgreen.webp"
+            alt="logo"
+            width="210"
+            height="29"
+            aria-hidden="true"
+            decoding="async"
+            class="cs-logo-img no-dark-filter"
+          />
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+          <!--Mobile Nav Toggle-->
+          <button class="cs-toggle" aria-label="mobile menu toggle">
+            <div class="cs-box" aria-hidden="true">
+              <span class="cs-line cs-line1" aria-hidden="true"></span>
+              <span class="cs-line cs-line2" aria-hidden="true"></span>
+              <span class="cs-line cs-line3" aria-hidden="true"></span>
+            </div>
+          </button>
+          <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+          <div class="cs-ul-wrapper">
+            <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+              <li class="cs-li">
+                <a href="index.html" class="cs-li-link"> Home </a>
+              </li>
+              <li class="cs-li">
+                <a href="about.html" class="cs-li-link cs-active"> About </a>
+              </li>
+              <li class="cs-li">
+                <a href="services.html" class="cs-li-link"> Services </a>
+              </li>
+              <li class="cs-li">
+                <a href="gallery.html" class="cs-li-link"> Gallery </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="contact.html" class="cs-button-outline">Contact Us</a>
+        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+          <svg
+            class="cs-moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 480 480"
+            style="enable-background: new 0 0 480 480"
+            xml:space="preserve"
+          >
+            <path
+              d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"
+            />
+          </svg>
+          <img
+            class="cs-sun"
+            aria-hidden="true"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg"
+            decoding="async"
+            alt="moon"
+            width="15"
+            height="15"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1014">
+      <div class="cs-container">
+        <picture class="cs-picture"> </picture>
+        <span class="cs-int-title">About Stitch Restaurant</span>
+        <p class="cs-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <!--Background Image-->
+      <picture class="cs-background">
+        <source
+          media="(max-width: 600px)"
+          srcset="
+            https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+          "
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="
+            https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+          "
+        />
+        <img
+          decoding="async"
+          src="https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D"
+          alt="breakfast"
+          width="1920"
+          height="1000"
+        />
+      </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-1014">
+      <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+          <picture class="cs-picture cs-picture1">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://images.unsplash.com/photo-1632161293871-cf2083474e34?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://images.unsplash.com/photo-1632161293871-cf2083474e34?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://images.unsplash.com/photo-1632161293871-cf2083474e34?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D"
+              alt="breakfast"
+              width="522"
+              height="581"
+              aria-hidden="true"
+            />
+          </picture>
+          <picture class="cs-picture cs-picture2">
+            <source
+              media="(max-width: 600px)"
+              srcset="
+                https://images.unsplash.com/photo-1458245201577-fc8a130b8829?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+              "
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="
+                https://images.unsplash.com/photo-1458245201577-fc8a130b8829?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D
+              "
+            />
+            <img
+              loading="lazy"
+              decoding="async"
+              src="https://images.unsplash.com/photo-1458245201577-fc8a130b8829?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFuZHNjYXBpbmd8ZW58MHx8MHx8fDA%3D"
+              alt="breakfast"
+              width="414"
+              height="400"
+              aria-hidden="true"
+            />
+          </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+          <span class="cs-topper">About Us</span>
+          <h2 class="cs-title">About Stitch Food</h2>
+          <p class="cs-text">
+            In consequat tincidunt turpis sit amet imperdiet. Praesent Class
+            officelan nonatoureanor mauris laoreet, iaculis libero quis.
+            Curabitur et tempus eri consequat tincidunt turpis sit amet
+            imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad
+            litora torquent per.
+          </p>
+          <p class="cs-text">
+            In consequat tincidunt turpis sit amet imperdiet. Praesent Class
+            officelan nonatoureanor mauris laoreet, iaculis libero quis.
+            Curabitur et tempus eri consequat tincidunt turpis sit amet
+            imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad
+            litora torquent per.
+          </p>
+          <div class="cs-quote">
+            <span class="cs-quote-text">
+              In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
+              consequat tincidunt turpis sit amet imperdiet for mind.
+            </span>
+            <span class="cs-name">Justin Time</span>
+            <span class="cs-job">CEO-Founder</span>
+            <img
+              class="cs-quote-icon"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+              alt="gavel"
+              width="136"
+              height="77"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    CTA                       -->
+    <!-- ============================================ -->
+
+    <section id="cta-1014">
+      <div class="cs-container">
+        <div class="cs-left-section">
+          <h2 class="cs-title">Come See Us For Breakfast!</h2>
+          <a href="index.html" class="cs-button-solid">Request Appointment</a>
+        </div>
+        <div class="cs-content">
+          <span class="cs-header">Available Hours</span>
+          <p class="cs-p">
+            Tuesday, Thursday, Friday: 9am-6pm<br />
+            ​(closed for lunch 12pm-2pm)
+          </p>
+          <p class="cs-p">
+            Appointments Preferred, Walk-Ins Welcome.<br />
+            Saturdays by Appointment Only.
+          </p>
+        </div>
+        <picture class="cs-background">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              https://images.unsplash.com/photo-1734303023491-db8037a21f09?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhbmRzY2FwaW5nfGVufDB8fDB8fHww
+            "
+          />
+          <source
+            media="(min-width: 601px)"
+            srcset="
+              https://images.unsplash.com/photo-1734303023491-db8037a21f09?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhbmRzY2FwaW5nfGVufDB8fDB8fHww
+            "
+          />
+          <img
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="https://images.unsplash.com/photo-1734303023491-db8037a21f09?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhbmRzY2FwaW5nfGVufDB8fDB8fHww"
+            alt="breakfast"
+            width="275"
+            height="132"
+          />
+        </picture>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-274">
+      <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+          <a aria-label="go back to home" class="cs-logo" href="index.html">
+            <!-- Remove the light class if you don't need the dark logo -->
+            <img
+              class="cs-logo-img"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="./assets/images/sfgreen.webp"
+              alt="logo"
+              width="240"
+              height="32"
+            />
+          </a>
+          <div class="cs-social">
+            <a
+              class="cs-social-link"
+              aria-label="visit google profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg"
+                alt="google"
+                width="11"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit facebook profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg"
+                alt="facebook"
+                width="6"
+                height="11"
+              />
+            </a>
+            <a
+              class="cs-social-link"
+              aria-label="visit instagram profile"
+              href="index.html"
+            >
+              <img
+                class="cs-social-img"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg"
+                alt="instagram"
+                width="11"
+                height="11"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Contact</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="tel:123-456 7890">(123) 456 7890</a>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="mailto:info@codestitch.com"
+              >sflandaescpingi@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Address</span>
+          </li>
+          <li class="cs-nav-li">
+            <a class="cs-nav-link" href="index.html"
+              >123 Market St<br />
+              San Francisco, CA 94101</a
+            >
+          </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+          <li class="cs-nav-li">
+            <span class="cs-header">Opening Hours</span>
+          </li>
+          <li class="cs-nav-li">Monday - Friday: 9am-6pm</li>
+          <li class="cs-nav-li">Closed 12pm - 1pm</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
