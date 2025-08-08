@@ -987,7 +987,7 @@ body {
     font-weight: 700;
     width: 3rem;
     height: 3rem;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--bodyTextColorWhite);
     border-radius: 50%;
     display: flex;
@@ -1067,7 +1067,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
-  #hero-1467 .cs-h3 {
+  #hero-1467 .cs-h2 {
     /* 31px - 39px */
     font-size: clamp(1.9375rem, 4vw, 2.4375rem);
     font-weight: 900;
