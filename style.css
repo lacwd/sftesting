@@ -1074,7 +1074,7 @@ body {
     text-align: inherit;
     max-width: 20ch;
     margin: 0 0 0.5rem 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColorWhite);
   }
   #hero-1467 .cs-expires {
     font-size: 1rem;

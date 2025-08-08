@@ -50,9 +50,8 @@ for (const item of dropDowns) {
   };
   item.addEventListener("click", onClick);
 }
-//
-//    The Dark Mode System
-//
+
+// The Dark Mode System
 
 // helper functions to toggle dark mode
 function enableDarkMode() {
@@ -64,16 +63,16 @@ function disableDarkMode() {
   localStorage.setItem("theme", "light");
 }
 
-// determines a new users dark mode preferences
+// determines a new user's dark mode preferences
 function detectColorScheme() {
   // default to the light theme
   let theme = "light";
 
-  // check localStorage for a saved 'theme' variable. if it's there, the user has visited before, so apply the necessary theme choices
+  // check localStorage for a saved 'theme' variable
   if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme");
   }
-  // if it's not there, check to see if the user has applied dark mode preferences themselves in the browser
+  // if not there, check for browser dark mode preference
   else if (
     window.matchMedia &&
     window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -81,7 +80,7 @@ function detectColorScheme() {
     theme = "dark";
   }
 
-  // if there is no preference set, the default of light will be used. apply accordingly
+  // apply theme accordingly
   theme === "dark" ? enableDarkMode() : disableDarkMode();
 }
 
@@ -90,11 +89,11 @@ detectColorScheme();
 
 // add event listener to the dark mode button toggle
 document.getElementById("dark-mode-toggle").addEventListener("click", () => {
-  // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
   localStorage.getItem("theme") === "light"
     ? enableDarkMode()
     : disableDarkMode();
 });
+
 class CS_GalleryFilter {
   filtersSelector = ".cs-button";
   galleriesSelector = ".cs-gallery";
@@ -105,14 +104,23 @@ class CS_GalleryFilter {
     this.$galleries = document.querySelectorAll(this.galleriesSelector);
     const $filters = document.querySelectorAll(this.filtersSelector);
 
-    this.onClick($filters[0]);
+    if ($filters.length > 0) {
+      this.onClick($filters[0]);
 
-    for (const $filter of $filters) {
-      $filter.addEventListener("click", () => this.onClick($filter));
+      for (const $filter of $filters) {
+        $filter.addEventListener("click", () => this.onClick($filter));
+      }
+    } else {
+      console.warn("No filter buttons found");
     }
   }
 
   onClick($filter) {
+    if (!$filter || !$filter.dataset) {
+      console.warn("Invalid filter element", $filter);
+      return;
+    }
+
     this.filter($filter.dataset.filter);
 
     const { activeClass } = this;
