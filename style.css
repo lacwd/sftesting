@@ -1,6 +1,6 @@
 :root {
   /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-  --primary: #18e736;
+  --primary: #107a24;
   --primaryLight: #18e736;
   --secondary: #18e736;
   --secondaryLight: #18e736;
@@ -771,10 +771,10 @@ body {
     transition: color 0.3s;
   }
   #cs-navigation .cs-li-link:hover {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   #cs-navigation .cs-li-link.cs-active {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   #cs-navigation .cs-button-outline {
     font-size: 1rem;
@@ -783,8 +783,8 @@ body {
     text-align: center;
     text-decoration: none;
     padding: 1rem 1.75rem;
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    color: var(--primaryLight);
+    border: 1px solid var(--primaryLight);
     border-radius: 1.875rem;
     display: block;
     z-index: 1;
@@ -1971,8 +1971,8 @@ body {
     /* prevents padding from adding to the width */
     box-sizing: border-box;
     padding: 0 1.5rem;
-    color: #fff;
-    background-color: var(--secondary);
+    color: #1a1a1a;
+    background-color: var(--primaryLight);
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1988,6 +1988,9 @@ body {
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+  }
+  #cta-1693 .cs-button-solid:hover {
+    color: #fff;
   }
   #cta-1693 .cs-button-solid:hover:before {
     width: 100%;
