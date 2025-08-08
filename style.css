@@ -1074,7 +1074,7 @@ body {
     text-align: inherit;
     max-width: 20ch;
     margin: 0 0 0.5rem 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
   }
   #hero-1467 .cs-expires {
     font-size: 1rem;
@@ -1265,6 +1265,7 @@ body {
   body.dark-mode #hero-1467 .cs-right {
     background-color: var(--medium);
   }
+  body.dark-mode #hero-1467 .cs-h2,
   body.dark-mode #hero-1467 .cs-h3,
   body.dark-mode #hero-1467 .cs-form-text,
   body.dark-mode #hero-1467 .cs-label,
