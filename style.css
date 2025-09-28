@@ -3729,6 +3729,7 @@ body {
   }
   #contact-1403 .cs-form {
     width: 100%;
+    border: 3px solid var(--primaryLight);
     max-width: 39.375rem;
     /* -30px to -100px */
     margin-bottom: calc(clamp(1.875rem, 7vw, 6.25rem) * -1);
@@ -3853,6 +3854,7 @@ body {
   #contact-1403 .cs-form {
     width: 46%;
     max-width: 36.125rem;
+    border: 3px solid var(--primaryLight);
   }
   #contact-1403 .cs-submit {
     width: auto;
